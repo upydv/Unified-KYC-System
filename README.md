@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +69,11 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+=======
+# Unified-KYC-System
+Software Engineering Project 
+This project is the implementation of few fundamental phases of SDLC.
+This project has great application in reducing paper-based KYC process.
+In initial face of the webapp . It will demonstrate the longin and creation of the unique id.
+Next step will go for validation.
+>>>>>>> 8bae6f34b9626bfdcd1921f81a39de64a2751e78
