@@ -76,4 +76,7 @@ This project is the implementation of few fundamental phases of SDLC.
 This project has great application in reducing paper-based KYC process.
 In initial face of the webapp . It will demonstrate the longin and creation of the unique id.
 Next step will go for validation.
+<<<<<<< HEAD
+>>>>>>> 8bae6f34b9626bfdcd1921f81a39de64a2751e78
+=======
 >>>>>>> 8bae6f34b9626bfdcd1921f81a39de64a2751e78
