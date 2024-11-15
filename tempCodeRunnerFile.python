@@ -1,0 +1,26 @@
+def abbreviation(a, b):
+    m, n = len(a), len(b)
+    dp = [[False] * (n + 1) for _ in range(m + 1)]
+    dp[0][0] = True
+    
+    for i in range(m + 1):
+        for j in range(n + 1):
+            if i < m and a[i].isupper() and a[i] == b[j]:
+                dp[i + 1][j + 1] = dp[i][j]
+            if i < m and a[i].islower():
+                dp[i + 1][j] = dp[i][j]
+            if i < m and j < n and a[i].isupper() and a[i] != b[j]:
+                dp[i + 1][j + 1] = False
+    
+    return "YES" if dp[m][n] else "NO"
+
+def main():
+    q = int(input().strip())
+    for _ in range(q):
+        a = input().strip()
+        b = input().strip()
+        result = abbreviation(a, b)
+        print(result)
+
+if __name__ == "__main__":
+    main()

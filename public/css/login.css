@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Sedan+SC&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Sedan SC", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+body{
+    /* background-image: url('../'); */
+    display: grid;
+    place-items: center;
+    background-color: red;
+}
+
+#body{
+    padding:10%
+}
+
+#header{
+    padding: 10px;
+    background-color: black;
+    display: block;
+    color: white;
+    width=100%;
+}
+
+#ukycsys{
+    font-size: 4rem;
+    margin-top: 20vh;
+    margin-bottom: 30px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+h1{
+    /* color: rgb(223, 155, 52); */
+    /* margin-top: 20vh; */
+    margin-bottom: 30px;
+
+}
+input{
+    font-size: 1rem;
+    width: 300px;
+    padding: 6px 2px; 
+    margin: 10px 0 10px 0;
+    border-radius: 5px; 
+}
+.sub{
+    background-color:rgb(223, 155, 52);
+    cursor: pointer;
+}
+
+form{
+    /* margin-top: 20vh; */
+    opacity: 0.9;
+    text-align: center;
+    /* border: 5px solid rgb(111, 70, 23); */
+    border-radius: 20px;
+    padding: 20px;
+    background-color: black;
+    color: white;
+    shadow: 5px 5px 5px 5px;
+    shadow-color: rgb(111, 70, 23);
+    shadow-opacity: 1.5;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(223, 155, 52);
+}
+
+p{
+    margin: 10%;
+    padding: 10%;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+}
+
+#homeSubmit{
+    width: 80%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: green;
+    color: white;
+}
+
+#welcomeUser{
+    width: 80%;
+    opacity:70%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color:black;
+    color: white;
+}

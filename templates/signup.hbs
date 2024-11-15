@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+    <div id="header">
+        <text id="ukycsys">Unified KYC System</text>
+    </div>
+    <h1>Sign Up</h1>
+
+    <form action="/signup" method="post">
+        <input placeholder="Name" name="name" type="text">
+        <br>
+        <input placeholder="Password" name="password" type="password">
+        <br>
+        <input placeholder="Phone Number" name="PhoneNumber" type="number" pattern="[0-9]{10}" maxlength="10">
+        <br>
+        <input placeholder="Email Address" name="EmailAddress" type="email">
+        <br>
+        <input placeholder="Date of Birth" name="DateofBirth" type="date" id="signupDOB">
+        <br>
+        <input placeholder="State" name="state" type="text">
+        <br>
+        <label for="gender">Gender:</label>
+        <select name="gender" id="gender" placeholder="Gender">
+            {{!-- <option value="">Gender</option> --}}
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+        <br>
+        <input class="sub" type="submit">
+        <br><br>
+            <a href="/">Go back to login page</a>
+    </form>
+    <script>
+        const today = new Date().toISOString().split('T')[0];
+        document.getElementById('signupDOB').setAttribute('max', today);
+
+
+    </script>
+</body>
+
+</html>

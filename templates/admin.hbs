@@ -1,0 +1,40 @@
+<!-- admin.hbs -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+    <div id="header">
+        <text id="ukycsys">Unified KYC System</text>
+    </div>
+    <h1>Admin Panel</h1>
+    <form action="/admin/search" method="post">
+        <input type="text" name="generatedNumber" placeholder="Enter generated number">
+        <button type="submit">Search</button>
+    </form>
+    {{#if user}}
+    <h2>User Details</h2>
+    <p>Name: {{ user.name }}</p>
+    <p>Phone Number: {{ user.PhoneNumber }}</p>
+    <p>Email Address: {{user.EmailAddress}}</p>
+    <p>State: {{user.state}}</p>
+    <p>AASIN: {{user.generatedNumber}}</p>
+    <!-- Display other user details as needed -->
+    <h3>Uploaded Files</h3>
+    <ul>
+        {{#each user.files}}
+        <li><a href="/uploads/{{ this.fileName }}">{{ this.fileName }}</a></li>
+        {{/each}}
+    </ul>
+
+    {{/if}}
+</body>
+
+</html>
